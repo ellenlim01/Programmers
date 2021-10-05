@@ -1,0 +1,15 @@
+class Solution {
+    public int[] solution(long n) {
+        
+        StringBuilder sb = new StringBuilder(Long.toString(n));
+        String[] temp = String.valueOf(sb.reverse()).split("");
+        int[] answer = new int[temp.length];
+        int b = 0;
+        for(String a : temp) {
+            answer[b] = Integer.parseInt(a);
+            b++;
+        }
+        
+        return answer;
+    }
+}
