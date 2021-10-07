@@ -1,0 +1,18 @@
+class Solution {
+    public int solution(String s) {
+        int answer = 0;
+        String temp = s.substring(0,0);
+        switch(temp) {
+            case "-": 
+                answer = -Integer.parseInt(s.substring(1, 4));
+                break;
+            case "+":
+                answer = +Integer.parseInt(s.substring(1, 4));
+                break;
+            default: 
+                answer = Integer.parseInt(s);
+                break;
+        }
+        return answer;
+    }
+}
